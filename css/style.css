@@ -176,3 +176,19 @@ p {
 .align-item-baseline {
   align-items: baseline;
 }
+
+.align-content-flex-start {
+  align-content: flex-start;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-flex-end {
+  align-content: flex-end;
+}
+
+.align-content-stretch {
+  align-content: stretch;
+}
