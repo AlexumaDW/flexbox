@@ -10,284 +10,381 @@
 </head>
 
 <body>
-  <h1>Aprendiendo Flexbox</h1>
-  <h2>Propiedad Flex</h2>
-  <h3>flex</h3>
-  <p>flex es una caja flexible que trabaja en Bloque</p>
-  <section class="container flex">
-    <article class="item">Flex Item 1</article>
-    <article class="item">Flex Item 2</article>
-    <article class="item">Flex Item 3</article>
+  <section id="temario-flexbox">
+    <h1>Aprendiendo Flexbox</h1>
+    <h2>Flexbox temario:</h2>
+    <ul class="temario">
+      <li><a href="index.html#propiedad-flex">Propiedad Flex</a></li>
+      <li><a href="index.html#flex-direction">Flex Direction</a></li>
+      <li><a href="index.html#flex-wrap">Flex Wrap (flujo de la caja)</a></li>
+      <li><a href="index.html#justify-content">Justify Content</a></li>
+      <li><a href="index.html#align-item">Align Item</a></li>
+    </ul>
   </section>
-  <h3>inline-flex</h3>
-  <p>inline-flex es una caja flexible que trabaja en linea</p>
-  <section class="container inline-flex">
-    <article class="item">Flex Item 1</article>
-    <article class="item">Flex Item 2</article>
-    <article class="item">Flex Item 3</article>
+  <section id="propiedad-flex">
+    <h2>Propiedad Flex</h2>
+    <h3>flex</h3>
+    <p>flex es una caja flexible que trabaja en Bloque</p>
+    <section class="container flex">
+      <article class="item">Flex Item 1</article>
+      <article class="item">Flex Item 2</article>
+      <article class="item">Flex Item 3</article>
+    </section>
+    <h3>inline-flex</h3>
+    <p>inline-flex es una caja flexible que trabaja en linea</p>
+    <section class="container inline-flex">
+      <article class="item">Flex Item 1</article>
+      <article class="item">Flex Item 2</article>
+      <article class="item">Flex Item 3</article>
+    </section>
+    <section class="container inline-flex">
+      <article class="item">Flex Item 1</article>
+      <article class="item">Flex Item 2</article>
+      <article class="item">Flex Item 3</article>
+    </section>
+    <li class="volver"><a href="index.html#temario-flexbox">👍🏻</a></li>
+    <hr>
   </section>
-  <section class="container inline-flex">
-    <article class="item">Flex Item 1</article>
-    <article class="item">Flex Item 2</article>
-    <article class="item">Flex Item 3</article>
+  <section id="flex-direction">
+    <h2>Flex Direction</h2>
+    <h3>row</h3>
+    <section class="container flex row">
+      <article class="item">Flex Item 1</article>
+      <article class="item">Flex Item 2</article>
+      <article class="item">Flex Item 3</article>
+    </section>
+    <h3>row-reverse</h3>
+    <section class="container flex row-reverse">
+      <article class="item">Flex Item 1</article>
+      <article class="item">Flex Item 2</article>
+      <article class="item">Flex Item 3</article>
+    </section>
+    <h3>column</h3>
+    <section class="container-2 flex column">
+      <article class="item">Flex Item 1</article>
+      <article class="item">Flex Item 2</article>
+      <article class="item">Flex Item 3</article>
+    </section>
+    <h3>column-reverse</h3>
+    <section class="container-2 flex column-reverse">
+      <article class="item">Flex Item 1</article>
+      <article class="item">Flex Item 2</article>
+      <article class="item">Flex Item 3</article>
+    </section>
+    <li class="volver"><a href="index.html#temario-flexbox">👍🏻</a></li>
+    <hr>
   </section>
-  <h2>Flex-direction</h2>
-  <h3>row</h3>
-  <section class="container flex row">
-    <article class="item">Flex Item 1</article>
-    <article class="item">Flex Item 2</article>
-    <article class="item">Flex Item 3</article>
+  <section id="flex-wrap">
+    <h2>Flex Wrap (flujo de la caja)</h2>
+    <h3>row flex-nowrap</h3>
+    <p>flex-nowrap no envuelve los items, nos crea una barra de navegación</p>
+    <section class="container row flex flex-nowrap">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+      <article class="item">flex item 6</article>
+      <article class="item">flex item 7</article>
+      <article class="item">flex item 8</article>
+      <article class="item">flex item 9</article>
+      <article class="item">flex item 10</article>
+      <article class="item">flex item 11</article>
+      <article class="item">flex item 12</article>
+      <article class="item">flex item 13</article>
+      <article class="item">flex item 14</article>
+      <article class="item">flex item 15</article>
+      <article class="item">flex item 16</article>
+      <article class="item">flex item 17</article>
+      <article class="item">flex item 18</article>
+      <article class="item">flex item 19</article>
+      <article class="item">flex item 20</article>
+    </section>
+    <h3>row flex-wrap</h3>
+    <p>flex-wrap envuelve los items dentro del contenedor, creando filas debajo</p>
+    <section class="container row flex flex-wrap">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+      <article class="item">flex item 6</article>
+      <article class="item">flex item 7</article>
+      <article class="item">flex item 8</article>
+      <article class="item">flex item 9</article>
+      <article class="item">flex item 10</article>
+      <article class="item">flex item 11</article>
+      <article class="item">flex item 12</article>
+      <article class="item">flex item 13</article>
+      <article class="item">flex item 14</article>
+      <article class="item">flex item 15</article>
+      <article class="item">flex item 16</article>
+      <article class="item">flex item 17</article>
+      <article class="item">flex item 18</article>
+      <article class="item">flex item 19</article>
+      <article class="item">flex item 20</article>
+    </section>
+    <h3>row flex-wrap-reverse</h3>
+    <p></p>
+    <section class="container row flex flex-wrap-reverse">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+      <article class="item">flex item 6</article>
+      <article class="item">flex item 7</article>
+      <article class="item">flex item 8</article>
+      <article class="item">flex item 9</article>
+      <article class="item">flex item 10</article>
+      <article class="item">flex item 11</article>
+      <article class="item">flex item 12</article>
+      <article class="item">flex item 13</article>
+      <article class="item">flex item 14</article>
+      <article class="item">flex item 15</article>
+      <article class="item">flex item 16</article>
+      <article class="item">flex item 17</article>
+      <article class="item">flex item 18</article>
+      <article class="item">flex item 19</article>
+      <article class="item">flex item 20</article>
+    </section>
+    <h3>column flex-nowrap</h3>
+    <p>flex-nowrap no envuelve los items, nos crea una barra de navegación</p>
+    <section class="container-2 column flex flex-nowrap">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3 class="margin-top">column flex-wrap</h3>
+    <p>flex-wrap envuelve los items dentro del contenedor, creando filas debajo</p>
+    <section class="container-2 column flex flex-wrap">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+      <article class="item">flex item 6</article>
+      <article class="item">flex item 7</article>
+      <article class="item">flex item 8</article>
+      <article class="item">flex item 9</article>
+      <article class="item">flex item 10</article>
+      <article class="item">flex item 11</article>
+      <article class="item">flex item 12</article>
+      <article class="item">flex item 13</article>
+      <article class="item">flex item 14</article>
+      <article class="item">flex item 15</article>
+      <article class="item">flex item 16</article>
+      <article class="item">flex item 17</article>
+      <article class="item">flex item 18</article>
+      <article class="item">flex item 19</article>
+      <article class="item">flex item 20</article>
+    </section>
+    <h3>column flex-wrap-reverse</h3>
+    <p></p>
+    <section class="container-2 column flex flex-wrap-reverse">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+      <article class="item">flex item 6</article>
+      <article class="item">flex item 7</article>
+      <article class="item">flex item 8</article>
+      <article class="item">flex item 9</article>
+      <article class="item">flex item 10</article>
+      <article class="item">flex item 11</article>
+      <article class="item">flex item 12</article>
+      <article class="item">flex item 13</article>
+      <article class="item">flex item 14</article>
+      <article class="item">flex item 15</article>
+      <article class="item">flex item 16</article>
+      <article class="item">flex item 17</article>
+      <article class="item">flex item 18</article>
+      <article class="item">flex item 19</article>
+      <article class="item">flex item 20</article>
+    </section>
+    <li class="volver"><a href="index.html#temario-flexbox">👍🏻</a></li>
+    <hr>
   </section>
-  <h3>row-reverse</h3>
-  <section class="container flex row-reverse">
-    <article class="item">Flex Item 1</article>
-    <article class="item">Flex Item 2</article>
-    <article class="item">Flex Item 3</article>
+  <section id="justify-content">
+    <H2>Justify Content</H2>
+    <h3>flex-start</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, al principio</p>
+    <section class="container row flex justify-content-flex-start">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>flex-center</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, al centro</p>
+    <section class="container row flex justify-content-center">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>flex-end</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, al final</p>
+    <section class="container row flex justify-content-flex-end">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>space-between</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, da espaciado sin considerar orillas</p>
+    <section class="container row flex justify-content-space-between">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>space-around</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, da el mismo espaciado a izquierda y derecha</p>
+    <section class="container row flex justify-content-space-around">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>space-evenly</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, da el mismo espaciado a todos los elementos
+      considerando las orillas</p>
+    <section class="container row flex justify-content-space-evenly">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>flex-start</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, al principio</p>
+    <section class="container-2 column flex justify-content-flex-start">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>flex-center</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, al centro</p>
+    <section class="container-2 column flex justify-content-center">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>flex-end</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, al final</p>
+    <section class="container-2 column flex justify-content-flex-end">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>space-between</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, da espaciado sin considerar orillas</p>
+    <section class="container-2 column flex justify-content-space-between">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>space-around</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, da el mismo espaciado a izquierda y derecha</p>
+    <section class="container-2 column flex justify-content-space-around">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>space-evenly</h3>
+    <p>Define la alineación de los elementos hijos en el eje principal, da el mismo espaciado a todos los elementos
+      considerando las orillas</p>
+    <section class="container-2 column flex justify-content-space-evenly">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <li class="volver"><a href="index.html#temario-flexbox">👍🏻</a></li>
+    <hr>
   </section>
-  <h3>column</h3>
-  <section class="container-2 flex column">
-    <article class="item">Flex Item 1</article>
-    <article class="item">Flex Item 2</article>
-    <article class="item">Flex Item 3</article>
-  </section>
-  <h3>column-reverse</h3>
-  <section class="container-2 flex column-reverse">
-    <article class="item">Flex Item 1</article>
-    <article class="item">Flex Item 2</article>
-    <article class="item">Flex Item 3</article>
-  </section>
-  <h2>flex wrap (flujo de la caja)</h2>
-  <h3>row flex-nowrap</h3>
-  <p>flex-nowrap no envuelve los items, nos crea una barra de navegación</p>
-  <section class="container row flex flex-nowrap">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-    <article class="item">flex item 6</article>
-    <article class="item">flex item 7</article>
-    <article class="item">flex item 8</article>
-    <article class="item">flex item 9</article>
-    <article class="item">flex item 10</article>
-    <article class="item">flex item 11</article>
-    <article class="item">flex item 12</article>
-    <article class="item">flex item 13</article>
-    <article class="item">flex item 14</article>
-    <article class="item">flex item 15</article>
-    <article class="item">flex item 16</article>
-    <article class="item">flex item 17</article>
-    <article class="item">flex item 18</article>
-    <article class="item">flex item 19</article>
-    <article class="item">flex item 20</article>
-  </section>
-  <h3>row flex-wrap</h3>
-  <p>flex-wrap envuelve los items dentro del contenedor, creando filas debajo</p>
-  <section class="container row flex flex-wrap">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-    <article class="item">flex item 6</article>
-    <article class="item">flex item 7</article>
-    <article class="item">flex item 8</article>
-    <article class="item">flex item 9</article>
-    <article class="item">flex item 10</article>
-    <article class="item">flex item 11</article>
-    <article class="item">flex item 12</article>
-    <article class="item">flex item 13</article>
-    <article class="item">flex item 14</article>
-    <article class="item">flex item 15</article>
-    <article class="item">flex item 16</article>
-    <article class="item">flex item 17</article>
-    <article class="item">flex item 18</article>
-    <article class="item">flex item 19</article>
-    <article class="item">flex item 20</article>
-  </section>
-  <h3>row flex-wrap-reverse</h3>
-  <p></p>
-  <section class="container row flex flex-wrap-reverse">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-    <article class="item">flex item 6</article>
-    <article class="item">flex item 7</article>
-    <article class="item">flex item 8</article>
-    <article class="item">flex item 9</article>
-    <article class="item">flex item 10</article>
-    <article class="item">flex item 11</article>
-    <article class="item">flex item 12</article>
-    <article class="item">flex item 13</article>
-    <article class="item">flex item 14</article>
-    <article class="item">flex item 15</article>
-    <article class="item">flex item 16</article>
-    <article class="item">flex item 17</article>
-    <article class="item">flex item 18</article>
-    <article class="item">flex item 19</article>
-    <article class="item">flex item 20</article>
-  </section>
-  <h3>column flex-nowrap</h3>
-  <p>flex-nowrap no envuelve los items, nos crea una barra de navegación</p>
-  <section class="container-2 column flex flex-nowrap">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-  </section>
-  <h3 class="margin-top">column flex-wrap</h3>
-  <p>flex-wrap envuelve los items dentro del contenedor, creando filas debajo</p>
-  <section class="container-2 column flex flex-wrap">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-    <article class="item">flex item 6</article>
-    <article class="item">flex item 7</article>
-    <article class="item">flex item 8</article>
-    <article class="item">flex item 9</article>
-    <article class="item">flex item 10</article>
-    <article class="item">flex item 11</article>
-    <article class="item">flex item 12</article>
-    <article class="item">flex item 13</article>
-    <article class="item">flex item 14</article>
-    <article class="item">flex item 15</article>
-    <article class="item">flex item 16</article>
-    <article class="item">flex item 17</article>
-    <article class="item">flex item 18</article>
-    <article class="item">flex item 19</article>
-    <article class="item">flex item 20</article>
-  </section>
-  <h3>column flex-wrap-reverse</h3>
-  <p></p>
-  <section class="container-2 column flex flex-wrap-reverse">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-    <article class="item">flex item 6</article>
-    <article class="item">flex item 7</article>
-    <article class="item">flex item 8</article>
-    <article class="item">flex item 9</article>
-    <article class="item">flex item 10</article>
-    <article class="item">flex item 11</article>
-    <article class="item">flex item 12</article>
-    <article class="item">flex item 13</article>
-    <article class="item">flex item 14</article>
-    <article class="item">flex item 15</article>
-    <article class="item">flex item 16</article>
-    <article class="item">flex item 17</article>
-    <article class="item">flex item 18</article>
-    <article class="item">flex item 19</article>
-    <article class="item">flex item 20</article>
-  </section>
-  <H2>Justify Content</H2>
-  <h3>flex-start</h3>
-  <p>Define la alineación en el eje principal, al principio</p>
-  <section class="container-2 row flex justify-content-flex-start">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-  </section>
-  <h3>flex-center</h3>
-  <p>Define la alineación en el eje principal, al centro</p>
-  <section class="container-2 row flex justify-content-center">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-  </section>
-  <h3>flex-end</h3>
-  <p>Define la alineación en el eje principal, al final</p>
-  <section class="container-2 row flex justify-content-flex-end">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-  </section>
-  <h3>space-between</h3>
-  <p>Define la alineación en el eje principal, da espaciado sin considerar orillas</p>
-  <section class="container-2 row flex justify-content-space-between">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-  </section>
-  <h3>space-around</h3>
-  <p>Define la alineación en el eje principal, da el mismo espaciado a izquierda y derecha</p>
-  <section class="container-2 row flex justify-content-space-around">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-  </section>
-  <h3>space-evenly</h3>
-  <p>Define la alineación en el eje principal, da el mismo espaciado a todos los elementos considerando las orillas</p>
-  <section class="container-2 row flex justify-content-space-evenly">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-    <article class="item">flex item 4</article>
-    <article class="item">flex item 5</article>
-  </section>
-  <h3>flex-start</h3>
-  <p>Define la alineación en el eje principal, al principio</p>
-  <section class="container-2 column flex justify-content-flex-start">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-
-  </section>
-  <h3>flex-center</h3>
-  <p>Define la alineación en el eje principal, al centro</p>
-  <section class="container-2 column flex justify-content-center">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-
-  </section>
-  <h3>flex-end</h3>
-  <p>Define la alineación en el eje principal, al final</p>
-  <section class="container-2 column flex justify-content-flex-end">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-
-  </section>
-  <h3>space-between</h3>
-  <p>Define la alineación en el eje principal, da espaciado sin considerar orillas</p>
-  <section class="container-2 column flex justify-content-space-between">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-
-  </section>
-  <h3>space-around</h3>
-  <p>Define la alineación en el eje principal, da el mismo espaciado a izquierda y derecha</p>
-  <section class="container-2 column flex justify-content-space-around">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-
-  </section>
-  <h3>space-evenly</h3>
-  <p>Define la alineación en el eje principal, da el mismo espaciado a todos los elementos considerando las orillas</p>
-  <section class="container-2 column flex justify-content-space-evenly">
-    <article class="item">flex item 1</article>
-    <article class="item">flex item 2</article>
-    <article class="item">flex item 3</article>
-
+  <section id="align-item">
+    <h2>Align Item</h2>
+    <h3>stretch</h3>
+    <p>Los elementos hijos se estiran en el eje transversal al tamaño del contenedor padre</p>
+    <section class="container-1 row flex align-item-stretch">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>flex-start</h3>
+    <p>Los elementos hijos se alinean en el eje transversal al inicio</p>
+    <section class="container-1 row flex align-item-flex-start">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>flex-end</h3>
+    <p>Los elementos hijos se alinean en el eje transversal al final</p>
+    <section class="container-1 row flex align-item-flex-end">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>center</h3>
+    <p>Los elementos hijos se alinean en el eje transversal al centro</p>
+    <section class="container-1 row flex align-item-center">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>baseline</h3>
+    <p>Los elementos hijos se alinean en el eje transversal en una linea imaginaria en el texto de todos los hijos</p>
+    <section class="container-1 row flex align-item-baseline">
+      <article class="item">flex item 1</article>
+      <article class="item-2">flex item 2</article>
+      <article class="item-3">flex item 3</article>
+    </section>
+    <h3>stretch</h3>
+    <p>Los elementos hijos se estiran en el eje transversal al tamaño del contenedor padre</p>
+    <section class="container-2 column flex align-item-stretch">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>flex-start</h3>
+    <p>Los elementos hijos se alinean en el eje transversal al inicio</p>
+    <section class="container-2 column flex align-item-flex-start">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>flex-end</h3>
+    <p>Los elementos hijos se alinean en el eje transversal al final</p>
+    <section class="container-2 column flex align-item-flex-end">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>center</h3>
+    <p>Los elementos hijos se alinean en el eje transversal al centro</p>
+    <section class="container-2 column flex align-item-center">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>baseline</h3>
+    <p>Los elementos hijos se alinean en el eje transversal en una linea imaginaria en el texto de todos los hijos</p>
+    <section class="container-3 column flex align-item-baseline">
+      <article class="item">flex item 1</article>
+      <article class="item-2">flex item 2</article>
+      <article class="item-3">flex item 3</article>
+    </section>
+    <li class="volver"><a href="index.html#temario-flexbox">👍🏻</a></li>
+    <hr>
   </section>
 </body>
 

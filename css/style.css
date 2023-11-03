@@ -11,11 +11,16 @@ html {
   box-sizing: inherit;
 }
 
-h1,
-h2 {
+h1 {
   text-align: center;
   color: blue;
   font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  font-size: 2rem;
 }
 
 h3,
@@ -37,16 +42,59 @@ p {
   font-size: 1.2rem;
 }
 
+.item-2 {
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: rgb(255, 150, 100);
+  font-size: 2rem;
+}
+
+.item-3 {
+  border-radius: 1.5rem;
+  margin: 1.5rem;
+  padding: 2rem;
+  background-color: rgb(255, 150, 100);
+  font-size: 2.5rem;
+}
+
 .container,
-.container-2 {
+.container-1,
+.container-2,
+.container-3 {
   padding: .2rem;
   margin: .5rem;
   background-color: rgb(100, 100, 100);
   border-radius: 1rem;
 }
 
+.container-1 {
+  height: 200px;
+}
+
 .container-2 {
   height: 300px;
+}
+
+.container-3 {
+  height: 400px;
+}
+
+.volver {
+  margin: .5rem 0;
+  font-size: 3rem;
+  list-style: none;
+}
+
+.temario {
+  text-align: center;
+  list-style: none;
+  font-size: 2rem;
+  padding-left: 0;
+}
+
+.volver>a {
+  text-decoration: none;
 }
 
 .flex {
@@ -107,4 +155,24 @@ p {
 
 .justify-content-space-evenly {
   justify-content: space-evenly;
+}
+
+.align-item-stretch {
+  align-items: stretch;
+}
+
+.align-item-flex-start {
+  align-items: flex-start;
+}
+
+.align-item-flex-end {
+  align-items: flex-end;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.align-item-baseline {
+  align-items: baseline;
 }
