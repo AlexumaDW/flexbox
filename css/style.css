@@ -61,11 +61,17 @@ p {
 .container,
 .container-1,
 .container-2,
-.container-3 {
+.container-3,
+.container-4 {
   padding: .2rem;
   margin: .5rem;
   background-color: rgb(100, 100, 100);
   border-radius: 1rem;
+}
+
+.container {
+  height: 200px;
+  width: 300px;
 }
 
 .container-1 {
@@ -78,6 +84,10 @@ p {
 
 .container-3 {
   height: 400px;
+}
+
+.container-4 {
+  width: 1000px;
 }
 
 .volver {
@@ -211,4 +221,16 @@ p {
 
 .flex-grow-2 {
   flex-grow: 2;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-2 {
+  flex-shrink: 2;
+}
+
+.flex-basis {
+  flex-basis: 200px;
 }
