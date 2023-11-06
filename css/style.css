@@ -204,3 +204,11 @@ p {
 .align-content-space-evenly {
   align-content: space-evenly;
 }
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
