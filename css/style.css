@@ -238,3 +238,19 @@ p {
 .order {
   order: -1;
 }
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
