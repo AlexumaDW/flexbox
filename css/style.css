@@ -234,3 +234,7 @@ p {
 .flex-basis {
   flex-basis: 200px;
 }
+
+.order {
+  order: -1;
+}
