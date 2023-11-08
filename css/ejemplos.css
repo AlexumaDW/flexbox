@@ -16,6 +16,11 @@ body {
   min-height: 100vh;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 main {
   flex-grow: 1;
 }
@@ -38,9 +43,9 @@ main {
 
 .hero-image {
   min-height: 100vh;
-  width: 100%;
+  min-width: 100%;
   background-repeat: no-repeat;
-  background-image: url("https://placebear.com/640/360");
+  background-image: url("https://placebear.com/1920/1080");
   color: #fff;
 }
 
@@ -70,5 +75,22 @@ ul {
   .logo,
   .menu li {
     padding: 1rem;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+
+  .flex-item {
+    flex: 0 0 50%;
+  }
+
+  .flex-order-1 {
+    order: 1;
+  }
+
+  .flex-row-reverse {
+    flex-direction: row-reverse;
   }
 }
