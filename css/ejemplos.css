@@ -1,0 +1,74 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.titulares {
+  background-color: #222;
+  color: #eee;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.hero-image {
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://placebear.com/640/360");
+  color: #fff;
+}
+
+.hero-image div {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+ul {
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .logo,
+  .menu li {
+    padding: 1rem;
+  }
+}
